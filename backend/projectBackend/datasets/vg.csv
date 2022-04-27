@@ -1,0 +1,21 @@
+id ,gameid,name,year,genre,publisher,image
+1,1,Red Dead Redemptions 2,2018,Action-Adventure,Rockstar Games,reddeadredemptions2.jpg
+2,2,Grand Theft Auto V,2013,Action-Adventure,Rockstar Games,grandtheftautov.jpg
+3,3,The Legends of Zelda  ,2017,Action-Adventure,Nintendo,thelegendsofzelda.jpg
+4,4,God of Wars,2018,Action-Adventure,Playstation ,godofwars.jpg
+5,5,Minecraft,2011,Survival,Mojang Studio,minecraft.jpg
+6,6,The Elder Scrolls V,2011,Role Playing,Bethesda Softworks,theelderscrollsv.jpg
+7,7,The Last of Us,2013,Action-Adventure,Sony Computer Entertainment,thelastofus.jpg
+8,8,Portal 2,2011,Puzzle,Valve,portal2.jpg
+9,9,Halo Combat Evoled,2001,First Person Shooter,Xbox Games,halocombatevolved.jpg
+10,10,The Witched Wild Hunt,2015,Role Playing,CD Projekt,thewitcherwildhunt.jpg
+11,11,Fortnite ,2015,Battle Royale,Epic Games,fortnite.jpg
+12,12,Mass Effect 2,2010,Role Playing,EA,masseffect2.jpg
+13,13,Half Life 2,2004,First Person Shooter,Valve,halflife2.jpg
+14,14,Super Mario Odyssey,2017,Action-Adventure,Nintendo,supermarioodyssey.jpg
+15,15,Bloodbome,2015,Role Playing,Sony Computer Entertainment,bloodbome.jpg
+16,16,Resident Evil 4,2005,Survival,Capcom,residentevil4.jpg
+17,17,Red Dead Redemptions,2010,Action-Adventure,Rockstar Games,reddeadredemptions.jpg
+18,18,BioShock,2007,First Person Shooter,Take-Two Interactive,bioshock.jpg
+19,19,Dark Souls,2011,Role Playing,Namco,darksouls.jpg
+20,20,Uncharted 2 : Among Theive,2009,Action-Adventure,Sony Computer Entertainment,uncharted2.jpg

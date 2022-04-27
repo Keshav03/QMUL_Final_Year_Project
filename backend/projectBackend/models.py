@@ -2,38 +2,11 @@ from django.db import models
 from django.contrib.auth.models import AbstractUser
 
 class User(AbstractUser):
-
-    username = models.CharField(max_length=50, unique=True)
-    # firstName = models.CharField(max_length=50)
-    # lastName = models.CharField(max_length=50)
-    # email = models.CharField(max_length=30,unique=True)
-
-    # profile = models.OneToOneField(
-    #     to=Profile,
-    #     blank=True,
-    #     null=True,
-    #     on_delete=models.CASCADE
-    # )
-
     def to_dict(self):
         return { 
             'id':self.id,
             'username':self.username, 
         }
-
-
-class customUser(models.Model):
-    username = models.CharField(max_length=50, unique=True)
-    firstName = models.CharField(max_length=50)
-    lastName = models.CharField(max_length=50)
-    email = models.CharField(max_length=30,unique=True)
-
-    def to_dict(self):
-        return { 
-            'id':self.id,
-            'username':self.username, 
-        }
-
 
 class Profile(models.Model):
     fullname = models.CharField(max_length=50, unique=True)
@@ -51,21 +24,20 @@ class Profile(models.Model):
             'username':self.username, 
         }
 
-
 class Game(models.Model):
-    name = models.CharField(max_length=50, unique=True)
-    year_of_release = models.IntegerField()
-    genre = models.CharField(max_length=50)
-    publisher = models.CharField(max_length=50)
-    developer = models.CharField(max_length=50)
-
+    name = models.CharField(max_length=75, unique=True)
+    platform = models.CharField(max_length=10,null=True)
+    year= models.IntegerField(null=True)
+    genre = models.CharField(max_length=50,null=True)
+    publisher = models.CharField(max_length=50,null=True)
+    user = models.ForeignKey(User, on_delete=models.CASCADE, null=True)
 
     def to_dict(self):
         return { 
             'id':self.id,
             'name': self.name,
-            'year':self.year_of_release,
+            'platform': self.platform,
+            'year':self.year,
             'genre': self.genre,
-            'publisher': self.publisher,
-            'developer':self.developer 
+            'publisher':self.publisher 
         }

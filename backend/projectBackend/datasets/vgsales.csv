@@ -1,4 +1,4 @@
-Rank,Name,Platform,Year,Genre,Publisher
+﻿Rank,Name,Platform,Year,Genre,Publisher
 2061,1942,NES,1985,Shooter,Capcom
 8359,.hack//G.U. Vol.1//Rebirth,PS2,2006,Role-Playing,Namco Bandai Games
 7109,.hack//G.U. Vol.2//Reminisce,PS2,2006,Role-Playing,Namco Bandai Games
@@ -31,13 +31,13 @@ Rank,Name,Platform,Year,Genre,Publisher
 3888,100 All-Time Favorites,DS,2009,Puzzle,Ubisoft
 3008,100 Classic Books,DS,2008,Misc,Nintendo
 13892,100 Classic Games,DS,2011,Misc,Rondomedia
-14635,1000 Cooking Recipes from ELLE à table,DS,2010,Misc,Nintendo
+14635,1000 Cooking Recipes from ELLE Ã  table,DS,2010,Misc,Nintendo
 5538,1001 Touch Games,DS,2011,Action,Avanquest
 7712,101-in-1 Explosive Megamix,DS,2008,Puzzle,Nordcurrent
 7115,101-in-1 Party Megamix Wii,Wii,2009,Misc,Nordcurrent
 11310,101-in-1 Sports Megamix,DS,2010,Sports,Nordcurrent
 14623,101-in-1 Sports Party Megamix,Wii,2010,Sports,Nordcurrent
-839,1080°: TenEighty Snowboarding,N64,1998,Sports,Nintendo
+839,1080Â°: TenEighty Snowboarding,N64,1998,Sports,Nintendo
 15008,11eyes: CrossOver,X360,2009,Adventure,5pb
 15555,11eyes: CrossOver,PSP,2010,Adventure,5pb
 13692,12Riven: The Psi-Climinal of Integral,PS2,2008,Adventure,CyberFront
@@ -138,7 +138,7 @@ Rank,Name,Platform,Year,Genre,Publisher
 6588,A.C.E.: Another Century's Episode 3: The Final,PS2,2007,Simulation,Banpresto
 9905,A.C.E.: Another Century's Episode Portable,PSP,2011,Simulation,Namco Bandai Games
 6454,A.C.E.: Another Century's Episode R,PS3,2010,Simulation,Namco Bandai Games
-9137,¡Shin Chan Flipa en colores!,DS,2007,Platform,505 Games
+9137,Â¡Shin Chan Flipa en colores!,DS,2007,Platform,505 Games
 16216,Aa Megami-samaa,PS2,2007,Adventure,Marvelous Interactive
 2569,ABBA: You Can Dance,Wii,2011,Misc,Ubisoft
 15752,Abunai: Koi no Sousa Shitsu,PSV,2015,Action,Asgard
@@ -1398,7 +1398,7 @@ Rank,Name,Platform,Year,Genre,Publisher
 8984,Boktai: The Sun is in Your Hand,GBA,2003,Role-Playing,Konami Digital Entertainment
 4863,Boku no Natsuyasumi,PS,2000,Adventure,Sony Computer Entertainment
 4723,Boku no Natsuyasumi 2: Umi no Bouken Hen,PS2,2002,Adventure,Sony Computer Entertainment
-11595,Boku no Natsuyasumi 3: Hokkoku Hen: Chiisana Boku no Dai Sougen​,PS3,2007,Adventure,Sony Computer Entertainment
+11595,Boku no Natsuyasumi 3: Hokkoku Hen: Chiisana Boku no Dai Sougenâ€‹,PS3,2007,Adventure,Sony Computer Entertainment
 7859,"Boku no Natsuyasumi 4: Seitouchi Shounen Tanteidan, Boku to Himitsu no Chizu",PSP,2009,Adventure,Sony Computer Entertainment
 11747,Boku no Natsuyasumi Portable 2: Nazo Nazo Shimai to Chinbotsusen no Himitsu,PSP,2010,Adventure,Sony Computer Entertainment
 10473,Boku no Natsuyasumi Portable: Mushi Mushi Hakase to Teppen-yama no Himitsu!!,PSP,2006,Adventure,Sony Computer Entertainment
@@ -1577,7 +1577,7 @@ Rank,Name,Platform,Year,Genre,Publisher
 2127,Brutal Legend,X360,2009,Action,Electronic Arts
 2187,Brutal Legend,PS3,2009,Action,Electronic Arts
 2490,Brute Force,XB,2003,Shooter,Microsoft Game Studios
-13540,B's-LOG Party♪,PSP,2010,Adventure,Idea Factory
+13540,B's-LOG Partyâ™ª,PSP,2010,Adventure,Idea Factory
 12348,Bubble Bobble also featuring Rainbow Islands,PS,1995,Puzzle,Acclaim Entertainment
 13966,Bubble Bobble Double Shot,DS,2007,Puzzle,Rising Star Games
 14423,Bubble Bobble Evolution,PSP,2006,Puzzle,Rising Star Games
@@ -2569,11 +2569,11 @@ Rank,Name,Platform,Year,Genre,Publisher
 13963,Da Capo I & II Plus Situation Portable,PSP,2010,Adventure,Kadokawa Shoten
 11005,DaGeDar,DS,2011,Action,GameMill Entertainment
 13543,Dai Senryaku VII: Modern Military Tactics,XB,2003,Strategy,Kool Kizz
-3382,Dai-2-Ji Super Robot Taisen α,PS2,2003,Strategy,Banpresto
+3382,Dai-2-Ji Super Robot Taisen Î±,PS2,2003,Strategy,Banpresto
 5837,Dai-2-Ji Super Robot Taisen OG,PS3,2012,Strategy,Namco Bandai Games
 5234,Dai-2-Ji Super Robot Taisen Z Saisei-hen,PSP,2012,Strategy,Namco Bandai Games
 4570,Dai-2-Ji Super Robot Taisen Z: Hakai-hen,PSP,2011,Strategy,Banpresto
-3389,Dai-3-Ji Super Robot Taisen α: Shuuen no Ginga e,PS2,2005,Strategy,Banpresto
+3389,Dai-3-Ji Super Robot Taisen Î±: Shuuen no Ginga e,PS2,2005,Strategy,Banpresto
 5050,Dai-4-Ji Super Robot Taisen,SNES,1995,Strategy,Banpresto
 3917,Dai-4-Ji Super Robot Taisen S,PS,1996,Strategy,Banpresto
 14505,Daibakushou: Jinsei Gekijou,SNES,1995,Misc,Taito
@@ -3549,7 +3549,7 @@ Rank,Name,Platform,Year,Genre,Publisher
 1114,Dragon Quest IV: Chapters of the Chosen,DS,2007,Role-Playing,Square Enix
 1660,Dragon Quest IV: Michibikareshi Monotachi,PS,2001,Role-Playing,Enix Corporation
 150,Dragon Quest IX: Sentinels of the Starry Skies,DS,2009,Role-Playing,Nintendo
-5604,Dragon Quest Monsters 1·2,PS,2002,Role-Playing,Enix Corporation
+5604,Dragon Quest Monsters 1Â·2,PS,2002,Role-Playing,Enix Corporation
 1193,Dragon Quest Monsters 2,GB,2001,Role-Playing,Enix Corporation
 2616,Dragon Quest Monsters 2,3DS,2014,Role-Playing,Square Enix
 3223,Dragon Quest Monsters Joker 3,3DS,2016,Role-Playing,Square Enix
@@ -3837,7 +3837,7 @@ Rank,Name,Platform,Year,Genre,Publisher
 4268,EA Sports UFC,XOne,2014,Sports,Electronic Arts
 2344,EA Sports UFC 2,PS4,2016,Sports,Electronic Arts
 4822,EA Sports UFC 2,XOne,2016,Sports,Electronic Arts
-10557,E·O·E: Eve of Extinction,PS2,2002,Fighting,Eidos Interactive
+10557,EÂ·OÂ·E: Eve of Extinction,PS2,2002,Fighting,Eidos Interactive
 9172,Earth Defense Force 2: Invaders from Planet Space,PSP,2011,Action,D3Publisher
 10396,Earth Defense Force 2: Invaders from Planet Space,PSV,2014,Action,Xseed Games
 11489,Earth Defense Force 2017,X360,2006,Action,D3Publisher
@@ -3885,7 +3885,7 @@ Rank,Name,Platform,Year,Genre,Publisher
 12501,Eigo de Tabisuru: Little Charo,DS,2011,Misc,Nintendo
 12703,Eikan wa Kimini 2002: Koshien no Kodou,PS2,2002,Sports,DigiCube
 11892,Eiken DS,DS,2007,Misc,Rocket Company
-5738,Einhänder,PS,1997,Shooter,SquareSoft
+5738,EinhÃ¤nder,PS,1997,Shooter,SquareSoft
 16593,Eiyuu Densetsu: Sora no Kiseki Material Collection Portable,PSP,2007,Role-Playing,Falcom Corporation
 8901,eJay Clubworld,PS2,N/A,Misc,Empire Interactive
 8487,El Shaddai: Ascension of the Metatron,X360,2011,Action,Ignition Entertainment
@@ -4336,8 +4336,8 @@ Rank,Name,Platform,Year,Genre,Publisher
 9841,Fate/Extra CCC,PSP,2013,Action,Marvelous Entertainment
 10699,Fate/hollow ataraxia,PSV,2014,Adventure,Type-Moon
 16383,Fate/kaleid liner Prisma Illya,3DS,2014,Action,Kadokawa Games
-8350,Fate/Stay Night [Réalta Nua],PS2,2007,Adventure,Kadokawa Shoten
-12756,Fate/Stay Night [Réalta Nua],PSV,2012,Adventure,Kadokawa Shoten
+8350,Fate/Stay Night [RÃ©alta Nua],PS2,2007,Adventure,Kadokawa Shoten
+12756,Fate/Stay Night [RÃ©alta Nua],PSV,2012,Adventure,Kadokawa Shoten
 11682,Fate/Tiger Colosseum,PSP,2007,Fighting,Capcom
 12553,Fate/Tiger Colosseum Upper,PSP,2008,Fighting,Capcom
 9160,Fate/Unlimited Codes,PS2,2008,Fighting,Capcom
@@ -6692,7 +6692,7 @@ Rank,Name,Platform,Year,Genre,Publisher
 2536,Kamaitachi no Yoru,SNES,1994,Adventure,ChunSoft
 5177,Kamaitachi no Yoru 2,PS2,2002,Adventure,ChunSoft
 16285,Kamaitachi no Yoru 2: Tokubetsu Hen,PSP,2006,Adventure,ChunSoft
-8512,Kamaitachi no Yoru × 3,PS2,2006,Adventure,Sega
+8512,Kamaitachi no Yoru Ã— 3,PS2,2006,Adventure,Sega
 9300,Kamen Rider Battle: Ganbaride,DS,2010,Strategy,Namco Bandai Games
 12723,Kamen Rider Kabuto,PS2,2006,Action,Namco Bandai Games
 9059,Kamen Rider Ryuki,PS,2002,Action,Namco Bandai Games
@@ -7363,7 +7363,7 @@ Rank,Name,Platform,Year,Genre,Publisher
 1871,Lightning Returns: Final Fantasy XIII,PS3,2013,Role-Playing,Square Enix
 6064,Lightning Returns: Final Fantasy XIII,X360,2013,Role-Playing,Square Enix
 11007,Lilie no Atelier: Salburg no Renkinjutsushi 3,PS2,2001,Role-Playing,Gust
-5027,Lilo & Stitch 2: Hämsterviel Havoc,GBA,2004,Action,Disney Interactive Studios
+5027,Lilo & Stitch 2: HÃ¤msterviel Havoc,GBA,2004,Action,Disney Interactive Studios
 14983,Lilpri DS: Hime-Chen! Apple Pink,DS,2010,Adventure,Sega
 15080,Line Rider 2: Unbound,Wii,2008,Puzzle,Deep Silver
 11488,Line Rider 2: Unbound,DS,2008,Puzzle,Deep Silver
@@ -9834,8 +9834,8 @@ Rank,Name,Platform,Year,Genre,Publisher
 13593,No Rules: Get Phat,GBA,2001,Action,TDK Mediactive
 5648,No.1 Muscle Ranking - Kinniku Banzuke Vol. 1: Oregasaikyouno Otokoda!,PS,1999,Sports,Konami Digital Entertainment
 8913,No.1 Muscle Ranking - Kinniku Banzuke Vol. 2: Aratanarugenkai Enochousen!,PS,2000,Sports,Konami Digital Entertainment
-11834,NOëL: La Neige,PS,1998,Adventure,Pioneer LDC
-7385,NOëL: NOT DiGITAL,PS,1996,Adventure,Pioneer LDC
+11834,NOÃ«L: La Neige,PS,1998,Adventure,Pioneer LDC
+7385,NOÃ«L: NOT DiGITAL,PS,1996,Adventure,Pioneer LDC
 16021,Nobunaga no Yabou DS,DS,2006,Strategy,Tecmo Koei
 14680,Nobunaga no Yabou DS 2,DS,2008,Strategy,Tecmo Koei
 16017,Nobunaga no Yabou Online: Houou no Shou,PS3,2012,Strategy,Ackkstudios
@@ -10324,7 +10324,7 @@ Rank,Name,Platform,Year,Genre,Publisher
 1095,PGR: Project Gotham Racing 2,XB,2003,Racing,Microsoft Game Studios
 3369,PGR3 - Project Gotham Racing 3,X360,2005,Racing,Microsoft Game Studios
 830,PGR4 - Project Gotham Racing 4,X360,2007,Racing,Microsoft Game Studios
-4980,Phantasy Star Ø,DS,2008,Role-Playing,Sega
+4980,Phantasy Star Ã˜,DS,2008,Role-Playing,Sega
 10022,Phantasy Star Collection,GBA,2002,Role-Playing,Atari
 7984,Phantasy Star Nova,PSV,2014,Role-Playing,Sega
 7528,Phantasy Star Online,DC,2000,Role-Playing,Sega
@@ -10496,20 +10496,20 @@ Rank,Name,Platform,Year,Genre,Publisher
 15508,Point Blank 3,PS,2000,Shooter,Namco Bandai Games
 12012,Point Blank DS (JP sales),DS,2006,Shooter,Atari
 12739,Point Blank DS (US sales),DS,2006,Shooter,Atari
-8345,Pokémon Beach Blank-out Blastoise / Go West Young Meowth Game Boy Advance Video,GBA,2004,Misc,Nintendo
-605,Pokémon Colosseum,GC,2003,Role-Playing,Nintendo
-133,Pokémon Crystal Version,GB,2000,Role-Playing,Nintendo
-131,Pokémon Emerald Version,GBA,2004,Role-Playing,Nintendo
-8079,Pokémon I Choose You / Squirtle Squad Game Boy Advance Video,GBA,2004,Misc,Nintendo
-826,Pokémon Mystery Dungeon: Blue Rescue Team,DS,2005,Role-Playing,Nintendo
-1816,Pokémon Mystery Dungeon: Red Rescue Team (US weekly sales),GBA,2005,Role-Playing,Nintendo
-89,Pokémon Platinum Version,DS,2008,Role-Playing,Nintendo
-548,Pokémon Stadium 2,N64,2000,Strategy,Nintendo
-336,Pokémon Trading Card Game,GB,1998,Strategy,Nintendo
-31,Pokémon Yellow: Special Pikachu Edition,GB,1998,Role-Playing,Nintendo
-9569,Pokémon: For Ho-Oh the Bells Toll!: Game Boy Advance Video,GBA,2004,Misc,Nintendo
-8850,Pokémon: Johto Photo Finish: Game Boy Advance Video,GBA,2004,Misc,N/A
-1684,PokéPark Wii: Pikachu's Adventure,Wii,2009,Adventure,Nintendo
+8345,PokÃ©mon Beach Blank-out Blastoise / Go West Young Meowth Game Boy Advance Video,GBA,2004,Misc,Nintendo
+605,PokÃ©mon Colosseum,GC,2003,Role-Playing,Nintendo
+133,PokÃ©mon Crystal Version,GB,2000,Role-Playing,Nintendo
+131,PokÃ©mon Emerald Version,GBA,2004,Role-Playing,Nintendo
+8079,PokÃ©mon I Choose You / Squirtle Squad Game Boy Advance Video,GBA,2004,Misc,Nintendo
+826,PokÃ©mon Mystery Dungeon: Blue Rescue Team,DS,2005,Role-Playing,Nintendo
+1816,PokÃ©mon Mystery Dungeon: Red Rescue Team (US weekly sales),GBA,2005,Role-Playing,Nintendo
+89,PokÃ©mon Platinum Version,DS,2008,Role-Playing,Nintendo
+548,PokÃ©mon Stadium 2,N64,2000,Strategy,Nintendo
+336,PokÃ©mon Trading Card Game,GB,1998,Strategy,Nintendo
+31,PokÃ©mon Yellow: Special Pikachu Edition,GB,1998,Role-Playing,Nintendo
+9569,PokÃ©mon: For Ho-Oh the Bells Toll!: Game Boy Advance Video,GBA,2004,Misc,Nintendo
+8850,PokÃ©mon: Johto Photo Finish: Game Boy Advance Video,GBA,2004,Misc,N/A
+1684,PokÃ©Park Wii: Pikachu's Adventure,Wii,2009,Adventure,Nintendo
 4046,Pokemon Art Academy,3DS,2014,Misc,Nintendo
 1141,Pokemon Battle Revolution,Wii,2006,Role-Playing,Nintendo
 82,Pokemon Black 2/Pokemon White 2,DS,2012,Role-Playing,Nintendo
@@ -11698,8 +11698,8 @@ Rank,Name,Platform,Year,Genre,Publisher
 13723,S.Y.K Renshouden Portable,PSP,2011,Adventure,Idea Factory
 15997,S.Y.K: Shinsetsu Saiyuuki,PS2,2009,Adventure,Idea Factory
 16374,S.Y.K: Shinsetsu Saiyuuki Portable,PSP,2010,Adventure,Idea Factory
-13510,Sébastien Loeb Rally Evo,PS4,2016,Racing,Milestone S.r.l
-16533,Sébastien Loeb Rally Evo,XOne,2016,Racing,Milestone S.r.l
+13510,SÃ©bastien Loeb Rally Evo,PS4,2016,Racing,Milestone S.r.l
+16533,SÃ©bastien Loeb Rally Evo,XOne,2016,Racing,Milestone S.r.l
 5209,Saban's Power Rangers: Lightspeed Rescue,N64,2000,Action,THQ
 5316,Saban's Power Rangers: Lightspeed Rescue,PS,2000,Action,THQ
 14162,Sabre Wulf,GBA,N/A,Platform,THQ
@@ -12071,7 +12071,7 @@ Rank,Name,Platform,Year,Genre,Publisher
 7389,Senran Kagura 2: Deep Crimson,3DS,2014,Action,Marvelous Entertainment
 9073,Senran Kagura Burst: Guren no Sh?jo-tachi,3DS,2012,Action,Marvelous Entertainment
 5210,Senran Kagura Shinovi Versus: Sh?jo-tachi no Sh?mei,PSV,2013,Fighting,Marvelous Entertainment
-14833,Senran Kagura: Bon Appétit!,PSV,2014,Misc,Marvelous Entertainment
+14833,Senran Kagura: Bon AppÃ©tit!,PSV,2014,Misc,Marvelous Entertainment
 7126,Senran Kagura: Estival Versus,PSV,2015,Action,Marvelous Interactive
 8450,Senran Kagura: Estival Versus,PS4,2015,Action,Marvelous Interactive
 8706,Senran Kagura: Sh?jo-tachi no Shinei,3DS,2011,Action,Marvelous Interactive
@@ -12177,8 +12177,8 @@ Rank,Name,Platform,Year,Genre,Publisher
 13012,Shifters,PS2,2002,Adventure,3DO
 16458,Shijyou Saikyou no Deshi Kenichi: Gekitou! Ragnarok Hachikengou,PS2,2007,Fighting,Capcom
 9489,Shimano Xtreme Fishing,Wii,2009,Sports,Mastiff
-11964,Shin Chan Contra ¡Los Plastas!,DS,2009,Platform,505 Games
-8961,Shin Chan: ¡Aventuras de Cine!,DS,2008,Platform,505 Games
+11964,Shin Chan Contra Â¡Los Plastas!,DS,2009,Platform,505 Games
+8961,Shin Chan: Â¡Aventuras de Cine!,DS,2008,Platform,505 Games
 12140,Shin Chan: Las Nuevas Aventuras Para Wii!,Wii,2006,Action,505 Games
 13500,Shin Fortune Quest: Sokutaku no Kishi,PS,1996,Misc,Media Works
 13363,Shin Hayarigami,PSV,2014,Adventure,Nippon Ichi Software
@@ -13132,7 +13132,7 @@ Rank,Name,Platform,Year,Genre,Publisher
 14532,Star Wars: The Force Unleashed II,PC,2010,Action,LucasArts
 480,Star Wars: The Old Republic,PC,2011,Role-Playing,Electronic Arts
 13552,Star X,GBA,2002,Shooter,BAM! Entertainment
-8669,StarBlade α,PS,1995,Shooter,Sony Computer Entertainment
+8669,StarBlade Î±,PS,1995,Shooter,Sony Computer Entertainment
 13231,StarCraft,PC,1998,Strategy,Activision
 8590,Starcraft 64,N64,2000,Strategy,Nintendo
 1094,StarCraft II: Heart of the Swarm,PC,2013,Strategy,Activision
@@ -13457,8 +13457,8 @@ Rank,Name,Platform,Year,Genre,Publisher
 3669,Super Robot Taisen F,SAT,1997,Strategy,Banpresto
 3674,Super Robot Taisen F Kanketsuhen,SAT,1998,Strategy,Banpresto
 7098,Super Robot Taisen F Kanketsuhen,PS,1999,Strategy,Banpresto
-2587,Super Robot Taisen α,PS,2000,Strategy,Banpresto
-3283,Super Robot Taisen α Gaiden,PS,2001,Strategy,Banpresto
+2587,Super Robot Taisen Î±,PS,2000,Strategy,Banpresto
+3283,Super Robot Taisen Î± Gaiden,PS,2001,Strategy,Banpresto
 3129,Super Robot Taisen Impact,PS2,2002,Strategy,Banpresto
 8028,Super Robot Taisen J,GBA,2005,Strategy,Banpresto
 7452,Super Robot Taisen K,DS,2009,Strategy,Namco Bandai Games
@@ -16296,9 +16296,9 @@ Rank,Name,Platform,Year,Genre,Publisher
 2461,Xenoblade Chronicles X,WiiU,2015,Role-Playing,Nintendo
 1299,Xenogears,PS,1998,Role-Playing,SquareSoft
 1017,Xenosaga Episode I: Der Wille zur Macht,PS2,2002,Role-Playing,Namco Bandai Games
-3475,Xenosaga Episode II: Jenseits von Gut und Böse,PS2,2004,Role-Playing,Sony Computer Entertainment
+3475,Xenosaga Episode II: Jenseits von Gut und BÃ¶se,PS2,2004,Role-Playing,Sony Computer Entertainment
 5150,Xenosaga Episode III: Also sprach Zarathustra,PS2,2006,Role-Playing,Namco Bandai Games
-15016,Xenosaga I·II,DS,2006,Role-Playing,Namco Bandai Games
+15016,Xenosaga IÂ·II,DS,2006,Role-Playing,Namco Bandai Games
 1236,Xevious,NES,1984,Shooter,Namco Bandai Games
 9099,Xevious 3D/G+,PS,1997,Shooter,Sony Computer Entertainment
 6373,XGIII: Extreme G Racing,PS2,2001,Racing,Acclaim Entertainment
@@ -16597,4 +16597,3 @@ Rank,Name,Platform,Year,Genre,Publisher
 6977,Zumba Fitness: World Party,XOne,2013,Misc,Majesco Entertainment
 15422,Zwei!!,PSP,2008,Role-Playing,Falcom Corporation
 12919,Zyuden Sentai Kyoryuger: Game de Gaburincho!!,3DS,2013,Action,Namco Bandai Games
-,,,,,
