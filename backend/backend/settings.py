@@ -31,10 +31,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-
-AUTH_USER_MODEL = 'projectBackend.User'
-
-
 LOGIN_URL = '/login/'
 
 # Application definition
@@ -70,6 +66,7 @@ REST_FRAMEWORK = {
             'rest_framework.authentication.BasicAuthentication',  # enables simple command line authentication
             'rest_framework.authentication.SessionAuthentication',
             'rest_framework.authentication.TokenAuthentication',
+            'rest_framework.permissions.IsAuthenticated',
         )
     }
 
@@ -174,28 +171,32 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CORS_ORIGIN_ALLOW_ALL = True
 
-CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000","http://localhost:8000"
-]
-
 CORS_ALLOW_CREDENTIALS = True
 
 CSRF_TRUSTED_ORIGINS = ['http://127.0.0.1:3000',"http://localhost:3000"]
 
-CORS_ORIGIN_WHITELIST = [
-    'http://localhost:3000',
-]
+# CORS_ORIGIN_WHITELIST = [
+#     'http://localhost:3000',
+# ]
 
 ALLOWED_HOSTS=['*']
 
-
-CSRF_COOKIE_SAMESITE = 'Strict'
-SESSION_COOKIE_SAMESITE = 'Strict'
+CSRF_COOKIE_SAMESITE = 'None'
+SESSION_COOKIE_SAMESITE = 'None'
 CSRF_COOKIE_HTTPONLY = False  # False since we will grab it via universal-cookies
 SESSION_COOKIE_HTTPONLY = True
+SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = True
 
+CORS_ALLOW_ALL_ORIGINS = True  
+CORS_ALLOWED_ORIGINS = [
+    'http://localhost:3000',
+    'http://127.0.0.1:3000',
+]
 
 #Authentication backends
 AUTHENTICATION_BACKENDS = (
         'django.contrib.auth.backends.ModelBackend',
     )
+
+AUTH_USER_MODEL = 'projectBackend.CustomUser'

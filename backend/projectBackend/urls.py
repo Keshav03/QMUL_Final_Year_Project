@@ -4,6 +4,8 @@ from django.contrib import admin
 from django.urls import path,include
 from projectBackend import views as apiView
 
+from projectBackend import recommendation_contentBased
+
 from rest_framework.authtoken import views as authView
 
 # from projectBackend.viewsets import userviewsets 
@@ -26,5 +28,8 @@ urlpatterns = [
     path('addToFavorite/', apiView.addToFavorite, name='addToFavorite'),
     path('getLikedGame/', apiView.getLikedGame, name='getLikedGame'),
     path('removeFromFavorite/', apiView.removeFromFavorite, name='removeFromFavorite'),
+    path('profile/', apiView.profile, name='profile'),
+    path('recommend/', recommendation_contentBased.recommendationContentBased, name='recommend'),
+
 ]
 
