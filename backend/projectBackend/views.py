@@ -1,11 +1,15 @@
 
 from distutils.sysconfig import get_makefile_filename
+import email
+from email.header import Header
 import encodings
+from pickletools import read_uint1
 import re
 
 import csv
 import json
 import os
+from webbrowser import get
 from django.shortcuts import render
 from django.shortcuts import redirect
 from django.contrib.auth.decorators import login_required
@@ -207,15 +211,34 @@ def getLikedGame(request):
 @csrf_exempt
 def profile(request):
 
-    if request.user.is_authenticated:
-        print(request.user)
-        profile = Profile.objects.get(customuser=request.user)
-        json = profile.to_dict()
-        password = CustomUser.objects.get(username=request.user).password    
+    if request.method == "GET":
 
-        json["password"] = password
-        return JsonResponse(
-            json
-        )
+        if request.user.is_authenticated:
+            profile = Profile.objects.get(customuser=request.user)
+            json = profile.to_dict()
+            # password = CustomUser.objects.get(username=request.user).password    
 
-    return JsonResponse({})
+            # json["password"] = password
+            return JsonResponse(
+                json
+            )
+
+    if request.method == "POST":
+
+        if request.user.is_authenticated:
+            username = request.POST.get("name")
+            gender = request.POST.get("gender")
+
+            try:
+                profile = Profile.objects.get(customuser=request.user)
+                profile.profile_username = username
+                profile.profile_gender = gender
+                # profile.save()
+                
+                return JsonResponse(
+                    profile.to_dict()
+                )
+            except:
+                return HttpResponseBadRequest()
+
+    return JsonResponse({"test":"test"})

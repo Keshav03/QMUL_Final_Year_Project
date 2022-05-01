@@ -1,13 +1,13 @@
 from re import T
-from django.db import models
+
 from django.contrib.auth.models import AbstractUser
 
-
+from django.db import models
 class Profile(models.Model):
 
-    profile_username = models.CharField(max_length=50)
+    profile_username = models.CharField(max_length=50,unique=True)
     profile_image = models.ImageField(null=True, blank=True)
-    profile_email = models.EmailField(max_length=254)
+    profile_email = models.EmailField(max_length=254 ,unique=True)
     profile_gender =  models.CharField(max_length=6, blank=True)
 
     def to_dict(self):
