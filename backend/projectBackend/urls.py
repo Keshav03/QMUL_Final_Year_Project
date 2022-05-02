@@ -21,15 +21,12 @@ urlpatterns = [
     path('createUser/', apiView.createUser, name='createUser'),
     path('login/', apiView.signin, name='login'),
     path('logout/', apiView.signout, name='logout'),
-    path('getUsers/',apiView.getuser,name="getuser"),
     path('', include(router.urls)),
     path('api-token-auth/', authView.obtain_auth_token, name='api-token-auth'),
     path('csvToJson/', apiView.make_json, name='csv-to-json'),
-    path('addToFavorite/', apiView.addToFavorite, name='addToFavorite'),
     path('getLikedGame/', apiView.getLikedGame, name='getLikedGame'),
-    path('removeFromFavorite/', apiView.removeFromFavorite, name='removeFromFavorite'),
     path('profile/', apiView.profile, name='profile'),
     path('recommend/', recommendation_contentBased.recommendationContentBased, name='recommend'),
-
+    path('rate/', apiView.rateGame, name='rate'),
 ]
 

@@ -6,6 +6,8 @@ from django.db import models
 class Profile(models.Model):
 
     profile_username = models.CharField(max_length=50,unique=True)
+    profile_firstName = models.CharField(max_length=50,null=True)
+    profile_lastName = models.CharField(max_length=50,null=True)
     profile_image = models.ImageField(null=True, blank=True)
     profile_email = models.EmailField(max_length=254 ,unique=True)
     profile_gender =  models.CharField(max_length=6, blank=True)
@@ -20,8 +22,7 @@ class Profile(models.Model):
         }
 
 class CustomUser(AbstractUser):
-    # username = models.CharField(max_length=50, unique=True)
-    # email = models.EmailField(unique=True,verbose_name="Email Address")
+    id = models.IntegerField(null=True)
     username = models.CharField(max_length=50, unique=True,primary_key=True)
     profile = models.OneToOneField(
         to=Profile,
@@ -30,16 +31,11 @@ class CustomUser(AbstractUser):
         on_delete=models.CASCADE
     )
 
-    # USERNAME_FIELD = "email"
-    # REQUIRED_FIELDS = ["username"]
-
     def to_dict(self):
         return { 
             'id':self.id,
             'username':self.username, 
         }
-
-
 
 class Game(models.Model):
     name = models.CharField(max_length=75, unique=True)

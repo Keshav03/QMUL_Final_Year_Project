@@ -6,6 +6,8 @@ import encodings
 from pickletools import read_uint1
 import re
 
+import pandas as pd
+
 import csv
 import json
 import os
@@ -38,14 +40,6 @@ from rest_framework.response import Response
 from . import serializers
 
 # Create your views here.
-
-def getuser(request):
-    userlist = []
-    for user in CustomUser.objects.all():
-        userlist.append(user.to_dict())
-    return JsonResponse({
-        'users': userlist
-    })
 
 @csrf_exempt
 def signin(request):
@@ -131,67 +125,98 @@ def createUser(request):
 
 
 
+# def get_game_rated(request):
+#     '''Function to get game rated by user  '''
+#     gamecsvFilePath = os.path.dirname(os.path.abspath(__file__)) + '/datasets/vg.csv'
+
+#     ratingcsvFilePath = os.path.dirname(os.path.abspath(__file__)) + 'gameUserRatings.csv'
+
+   
+
+#     with open(gamecsvFilePath) as csvf:
+#          csvReader = csv.DictReader(csvf)
+#          data= {"gameList":[]}
+#          for rows in csvReader:
+#             data["gameList"].append(rows)
+#     return JsonResponse(data)
+
+
+
+@csrf_exempt
+def rateGame(request):
+
+    if request.method == "POST":
+        gameid = request.POST.get("gameid")
+        print(gameid)
+        rating =  request.POST.get("rating")
+        print(rating)
+
+        if request.user.is_authenticated:
+            ratingcsvFilePath = os.path.dirname(os.path.abspath(__file__)) + '/datasets/gameUserRatings.csv'
+            user = request.user
+            user= CustomUser.objects.get(username = user)
+            userid = user.to_dict()["id"]
+            data = []
+            data.append(userid)
+            data.append(gameid)
+            data.append(rating)
+
+            with open(ratingcsvFilePath) as csvf:
+                ratingcsvReader = csv.DictReader(csvf)
+                i= 0
+                for rows in ratingcsvReader:
+                    if(int(rows["gameid"])==int(gameid) and int(rows["userid"]) == int(userid) ):
+                        print("in here")
+                        df =  pd.read_csv(ratingcsvFilePath)
+                        df.loc[i,"rating"] = rating
+                        df.to_csv(ratingcsvFilePath,index=False)
+                        return JsonResponse({})
+                    i +=1
+            
+            with open(ratingcsvFilePath,'a',encoding='UTF-8',newline='') as f:
+                writer = csv.writer(f) 
+                writer.writerow(data)
+
+    return JsonResponse({})
+
 def make_json(request):
-    csvFilePath = os.path.dirname(os.path.abspath(__file__)) + '/datasets/vg.csv'
-    with open(csvFilePath) as csvf:
-         csvReader = csv.DictReader(csvf)
-         data= {"gameList":[]}
-         for rows in csvReader:
-            data["gameList"].append(rows)
+
+    if request.user.is_authenticated:
+        gamecsvFilePath = os.path.dirname(os.path.abspath(__file__)) + '/datasets/vg.csv'        
+        ratingcsvFilePath = os.path.dirname(os.path.abspath(__file__)) + '/datasets/gameUserRatings.csv'
+
+        user = request.user
+        user= CustomUser.objects.get(username = user)
+        userid = user.to_dict()["id"]
+        print(userid)
+
+        data= {"gameList":[]}
+
+        with open(gamecsvFilePath) as csvf:
+                gamecsvReader = csv.DictReader(csvf)
+                temp = 0
+                for rows1 in gamecsvReader:
+
+                    with open(ratingcsvFilePath) as csvf:
+                        ratingcsvReader = csv.DictReader(csvf)
+                        for rows2 in ratingcsvReader:
+                            if(userid == int(rows2["userid"])):
+                                if(int(rows2["gameid"])==int((rows1["gameid"]))):
+                                    temp = int(rows2["rating"])
+                                    print("ratings :" + str(rows2["rating"]))
+
+                    rows1["rating"] = temp
+                    data["gameList"].append(rows1)
+                    temp = 0
+
+        # with open(gamecsvFilePath) as csvf:
+        #     csvReader = csv.DictReader(csvf)
+        #     data= {"gameList":[]}
+        #     for rows in csvReader:
+        #         print(rows["gameid"])
+        #         data["gameList"].append(rows)
+        
     return JsonResponse(data)
-
-@csrf_exempt
-def addToFavorite(request):
-    if request.method == 'POST':
-        name = request.POST.get("name")
-        platform = request.POST.get("platform")
-        year = request.POST.get("year")
-        if year == "":
-            year = None
-        genre = request.POST.get("genre")
-        publisher = request.POST.get("publisher")
-
-        user = ""
-        if user == "admin1":
-            gameList = CustomUser.objects.get(username=user).game_set.all()
-            try:
-                x1 = Game.objects.get(name=name)
-                if x1 in gameList:
-                    pass
-                else:
-                    CustomUser.objects.get(username="admin1").game_set.add(x1)
-                
-            except Game.DoesNotExist:
-                x1 = Game.objects.create(name=name,platform=platform,year=year,genre=genre,publisher=publisher)
-                if x1 not in gameList:
-                    CustomUser.objects.get(username="admin1").game_set.add(x1)
-        else:
-            print("You need to be logged in first")
-            return HttpResponse('Error handler content', status=403)
-
-    return JsonResponse({})
-
-
-
-@csrf_exempt
-def removeFromFavorite(request):
-    if request.method == 'POST':
-        name = request.POST.get("name")
-        user = "admin1"
-        gameList = CustomUser.objects.get(username=user).game_set.all()
-        try:
-            x1 = Game.objects.get(name=name)
-            if x1 in gameList:
-                CustomUser.objects.get(username=user).game_set.remove(x1)
-                print("removed from list")
-            else:
-                print("not in list")
-        except Game.DoesNotExist:
-            print("does not exist")
-        gameList = CustomUser.objects.get(username="admin1").game_set.all()
-        print(gameList)
-
-    return JsonResponse({})
 
 def getLikedGame(request):
     response = {"games":[]}
@@ -216,9 +241,6 @@ def profile(request):
         if request.user.is_authenticated:
             profile = Profile.objects.get(customuser=request.user)
             json = profile.to_dict()
-            # password = CustomUser.objects.get(username=request.user).password    
-
-            # json["password"] = password
             return JsonResponse(
                 json
             )
@@ -233,7 +255,7 @@ def profile(request):
                 profile = Profile.objects.get(customuser=request.user)
                 profile.profile_username = username
                 profile.profile_gender = gender
-                # profile.save()
+                profile.save()
                 
                 return JsonResponse(
                     profile.to_dict()

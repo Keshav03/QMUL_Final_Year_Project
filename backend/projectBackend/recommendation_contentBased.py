@@ -1,23 +1,24 @@
 import pandas as pd
-import numpy as np
 import os
-
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
+
+
 from django.http import JsonResponse
-
-
 from django.views.decorators.csrf import csrf_exempt
+
+
+
 
 @csrf_exempt
 def recommendationContentBased(request):
 
     if (request.method == "POST"):
         game = request.POST.get('name')
-        print(game)
+
+
         gamescsvFilePath = os.path.dirname(os.path.abspath(__file__)) + '/datasets/vg.csv'
         games = pd.read_csv(gamescsvFilePath, usecols=['gameid','name','year','genre','publisher','image','description'],dtype={'gameid':'int32','name': 'str', 'year': 'int32', 'genre':'str','publisher':'str','image':'str','description':'str'})
-
         def convertToList(x):
             list1 = []
             if isinstance(x,int):
@@ -34,21 +35,15 @@ def recommendationContentBased(request):
 
         games['tags'] = games['description'] + games['genre'] + games['publisher']
 
-        # games = games.drop(columns=['description','genre','publisher','year'])
-
         games['tags'] = games['tags'].apply(lambda x: " ".join(x))
 
 
-        cv = CountVectorizer(max_features=1000,stop_words='english')
-        vector = cv.fit_transform(games['tags']).toarray()
-        similarity_score = cosine_similarity(vector)
-
+        featureVector = CountVectorizer(max_features=1000,stop_words='english')
+        featureVector = featureVector.fit_transform(games['tags']).toarray()
+        similarity_score = cosine_similarity(featureVector)
         result = recommend(games,similarity_score,game)
 
         return JsonResponse({"top5":result})
-
-
-
 
 def recommend(gameSet,similarityScore,game):
     try:
