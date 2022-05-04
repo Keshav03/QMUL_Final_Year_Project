@@ -124,24 +124,6 @@ def createUser(request):
     return HttpResponseBadRequest("Invalid method")
 
 
-
-# def get_game_rated(request):
-#     '''Function to get game rated by user  '''
-#     gamecsvFilePath = os.path.dirname(os.path.abspath(__file__)) + '/datasets/vg.csv'
-
-#     ratingcsvFilePath = os.path.dirname(os.path.abspath(__file__)) + 'gameUserRatings.csv'
-
-   
-
-#     with open(gamecsvFilePath) as csvf:
-#          csvReader = csv.DictReader(csvf)
-#          data= {"gameList":[]}
-#          for rows in csvReader:
-#             data["gameList"].append(rows)
-#     return JsonResponse(data)
-
-
-
 @csrf_exempt
 def rateGame(request):
 
