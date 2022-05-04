@@ -8,7 +8,6 @@ class Profile(models.Model):
     profile_username = models.CharField(max_length=50,unique=True)
     profile_firstName = models.CharField(max_length=50,null=True)
     profile_lastName = models.CharField(max_length=50,null=True)
-    profile_image = models.ImageField(null=True, blank=True)
     profile_email = models.EmailField(max_length=254 ,unique=True)
     profile_gender =  models.CharField(max_length=6, blank=True)
 
@@ -16,7 +15,8 @@ class Profile(models.Model):
         return{
             'id': self.id,
             'name': self.profile_username,
-            'image': self.profile_image.url if self.profile_image else None,
+            'firstName' : self.profile_firstName,
+            'lastName': self.profile_lastName,
             'email': self.profile_email,
             'gender': self.profile_gender,
         }
