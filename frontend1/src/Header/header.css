@@ -1,0 +1,84 @@
+.header-container{
+    width: 100vw;
+    height: 10vh;
+    background-color: rgb(46, 46, 46);
+}
+
+header{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#headerTitle{
+    position: relative;
+    color:white;
+    font-size: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform:uppercase;
+    letter-spacing: 10px;
+}
+
+#name{
+    color:rgb(27, 183, 255);
+    text-transform: uppercase;
+    font-size: 0.8em;
+}
+
+#searchBar{
+    position: relative;
+    width: 20vw;
+    height: 15%;
+    padding: 0.5% 1% 0.5% 1%;
+    outline: none;
+    border: none;
+    right:-5vw;
+    background-color: rgba(255, 255, 255, 0.097);
+    border-radius: 5px 5px 0 0;
+    border-bottom: 2.5px solid white;
+    font-size: 0.9em;
+    color: grey;
+}
+
+#searchBar::placeholder {
+    color:rgb(199, 199, 199)
+}
+
+.nav{
+    position: relative;
+    width: 25%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.link{
+    color:white;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 1% 5%;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 1em;
+    letter-spacing: 2px;
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.link:hover{
+    color:rgb(27, 183, 255);
+}
+
+
+.submit{
+    position: relative;
+    left:25px;
+}
